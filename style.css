@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("./assets/city.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    align-items: center;
+    justify-content: space-between; /* Ensures left, center, and right alignment */
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between icon and text */
+}
+
+.nav-bar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+#nav-bar-search{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 25px;
+    height: 30px;
+    border: none;
+    background-color: aliceblue;
+    color: #93C572;
+    display: flex;
+    width: 375px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#nav-bar-search input{
+    flex: 1; /* Makes input take available space */
+    border: none;
+    background-color: aliceblue;
+    color: #93C572;
+    width: fit-content;
+}
+
+#nav-bar-search input::placeholder {
+    color: #93C572
+}
+
+#nav-bar-search input:focus{
+    outline: none;
+    border: none;
+}
+
+.nav-bar-button{
+    background-color: #93C572;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.nav-link {
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #93C572;
+    font-style: oblique;
+    text-shadow: 2px 2px 5px #93C572;
+    cursor: pointer;
+}
+
+.socials-bar{
+    height: 100%;
+    width: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: visible;
+    padding-top: 100px;
+}
+
+.vertical-line{
+    border-right: 3px solid aliceblue;
+    height: 275px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50px;
+    overflow-x: visible;
+    margin-top: 20px;
+}
+
+.socials a{
+    font-size: 20px; 
+    text-decoration: none;  
+    color: aliceblue;
+}
+
+.page-content{
+    padding-top: 135px;
+    padding-left: 70px;
+    color: aliceblue;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-heading{
+    font-size: 72px;
+    text-align: left;
+    width: 100%;
+}
+
+.content-desc{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+.left-placement{
+    width: 100%;
+}
+
+.home-content{
+    width: 400px;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.about-us-content{
+    width: 1200px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 20px;
+    align-self: center;
+}
+
+.contact-us-content{
+    padding-top: 200px;
+    padding-left: 70px;
+    color: aliceblue;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#home-book-now-button{
+    background-color: rgba(228, 241, 254, .4);
+    width: 120px;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.team{
+    display: flex;
+    padding: 15px;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+.team-member{
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.team-member-name{
+    font-size: 20px;
+    font-style: bold;
+    text-align: left;
+}
+
+.team-member-desc{
+    font-size: 15px;
+    text-align: left;
+}
+
+.designation{
+    font-size: 20px;
+    width: 100%;
+    background-color: #93C572;
+    border: white solid 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-input{
+    background-color: rgba(0, 0, 0, .5);
+    border: solid 2px aliceblue;
+    border-radius: 3px;
+    padding: 5px;
+    width: 500px;
+}
+
+.form-input::placeholder{
+    color: #93C572;
+    top: 0px;
+    left: 0px;
+}
+
+#form-message{
+    height: 175px;
+}
+
+#form-submit-button{
+    background-color: #93C572;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.unseen{
+    visibility: hidden;
+}
+
+#search-result{
+    z-index: 2;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 500px;
+}
+
+#search-result-topper{
+    background-color: #93C572;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;  
+    margin-bottom: 10px;   
+}
+
+#result-1{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#result-2{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.result-img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.result-desc-container{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.result-button{
+    height: 30px;
+    width: 40px;
+    background-color: #93C572;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+}
+
+.result-text{
+    color: #93C572;
+}
